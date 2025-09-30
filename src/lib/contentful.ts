@@ -19,14 +19,29 @@ export interface BlogPost {
   tags?: string[];
 }
 
-// Initialize Contentful client
-const client = contentful.createClient({
-  space: import.meta.env.CONTENTFUL_SPACE_ID || '',
-  accessToken: import.meta.env.CONTENTFUL_ACCESS_TOKEN || '',
-});
+// Check if Contentful credentials are available
+const hasContentfulCredentials = !!(
+  import.meta.env.CONTENTFUL_SPACE_ID &&
+  import.meta.env.CONTENTFUL_ACCESS_TOKEN
+);
+
+// Initialize Contentful client only if credentials are available
+let client: contentful.ContentfulClientApi<undefined> | null = null;
+
+if (hasContentfulCredentials) {
+  client = contentful.createClient({
+    space: import.meta.env.CONTENTFUL_SPACE_ID!,
+    accessToken: import.meta.env.CONTENTFUL_ACCESS_TOKEN!,
+  });
+}
 
 // Fetch all blog posts
 export async function getBlogPosts(): Promise<BlogPost[]> {
+  if (!client) {
+    console.warn('Contentful client not initialized. Please set CONTENTFUL_SPACE_ID and CONTENTFUL_ACCESS_TOKEN environment variables.');
+    return [];
+  }
+
   try {
     const entries = await client.getEntries({
       content_type: 'blogPost',
@@ -52,6 +67,11 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
 
 // Fetch a single blog post by slug
 export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> {
+  if (!client) {
+    console.warn('Contentful client not initialized.');
+    return null;
+  }
+
   try {
     const entries = await client.getEntries({
       content_type: 'blogPost',
@@ -83,6 +103,11 @@ export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> 
 
 // Fetch blog posts by category
 export async function getBlogPostsByCategory(category: string): Promise<BlogPost[]> {
+  if (!client) {
+    console.warn('Contentful client not initialized.');
+    return [];
+  }
+
   try {
     const entries = await client.getEntries({
       content_type: 'blogPost',
