@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<Layout title="Clean Collective Ltd - Domestic Cleaning Services" description="Professional domestic cleaning services in Burton upon Trent and Derby. Created by parents, for parents.">
+	<!-- Hero Section -->
+	<section class="bg-gradient-to-br from-emerald-600 to-emerald-800 text-white">
+		<div class="container mx-auto px-4 py-20 md:py-32">
+			<div class="max-w-4xl mx-auto text-center">
+				<h1 class="text-5xl md:text-6xl font-bold mb-6">Clean Collective Ltd</h1>
+				<p class="text-2xl md:text-3xl mb-4 text-emerald-100">Domestic Cleaning Services</p>
+				<p class="text-xl mb-8 text-emerald-50">Created by parents, for parents</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/services" class="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold hover:bg-emerald-50 transition-all transform hover:scale-105">
+						Our Services
+					</a>
+					<a href="mailto:admin@cleancollective.co.uk" class="bg-emerald-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-emerald-900 transition-all border-2 border-white">
+						Email Us
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Story Section -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-4xl font-bold text-gray-900 mb-6 text-center">Our Story</h2>
+				<div class="bg-emerald-50 rounded-xl p-8 md:p-12">
+					<p class="text-lg text-gray-700 leading-relaxed">
+						Created by parents, for parents. Our journey began when our founder returned from maternity leave and 
+						struggled to find work that fit around childcare. That challenge sparked the idea for a business built on 
+						flexibility, understanding, and support. Today, that ethos remains at the heart of everything we do—with 
+						many of our team members also being parents, we understand the juggle and are proud to create a workplace 
+						that truly works for families.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Overview -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Our Services</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+				<!-- Standard Cleans -->
+				<div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+					<div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+						<svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Standard Cleans</h3>
+					<p class="text-gray-600 mb-4">Regular cleaning services to keep your home fresh and tidy.</p>
+					<ul class="space-y-2 text-gray-700">
+						<li class="flex items-start">
+							<span class="text-emerald-600 mr-2">•</span>
+							<span>Bathrooms & kitchens</span>
+						</li>
+						<li class="flex items-start">
+							<span class="text-emerald-600 mr-2">•</span>
+							<span>Living areas</span>
+						</li>
+						<li class="flex items-start">
+							<span class="text-emerald-600 mr-2">•</span>
+							<span>Floors & surfaces</span>
+						</li>
+					</ul>
+					<a href="/services#standard" class="inline-block mt-6 text-emerald-600 font-semibold hover:text-emerald-700">
+						Learn more →
+					</a>
+				</div>
+
+				<!-- Deep Cleans -->
+				<div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-2 border-emerald-200">
+					<div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-6">
+						<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Deep Cleans</h3>
+					<p class="text-gray-600 mb-4">Comprehensive cleaning for a spotless home from top to bottom.</p>
+					<ul class="space-y-2 text-gray-700">
+						<li class="flex items-start">
+							<span class="text-emerald-600 mr-2">•</span>
+							<span>Inside appliances</span>
+						</li>
+						<li class="flex items-start">
+							<span class="text-emerald-600 mr-2">•</span>
+							<span>Behind furniture</span>
+						</li>
+						<li class="flex items-start">
+							<span class="text-emerald-600 mr-2">•</span>
+							<span>Detailed cleaning</span>
+						</li>
+					</ul>
+					<a href="/services#deep" class="inline-block mt-6 text-emerald-600 font-semibold hover:text-emerald-700">
+						Learn more →
+					</a>
+				</div>
+
+				<!-- Bathroom Steam Cleans -->
+				<div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+					<div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+						<svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Bathroom Steam Cleans</h3>
+					<p class="text-gray-600 mb-4">Specialized deep cleaning for bathrooms using steam technology.</p>
+					<ul class="space-y-2 text-gray-700">
+						<li class="flex items-start">
+							<span class="text-emerald-600 mr-2">•</span>
+							<span>Grout cleaning</span>
+						</li>
+						<li class="flex items-start">
+							<span class="text-emerald-600 mr-2">•</span>
+							<span>Limescale removal</span>
+						</li>
+						<li class="flex items-start">
+							<span class="text-emerald-600 mr-2">•</span>
+							<span>Mould treatment</span>
+						</li>
+					</ul>
+					<a href="/services#bathroom" class="inline-block mt-6 text-emerald-600 font-semibold hover:text-emerald-700">
+						Learn more →
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Areas -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Our Service Areas</h2>
+			<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div class="bg-emerald-50 rounded-xl p-8">
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Burton upon Trent Area</h3>
+					<p class="text-gray-700 mb-4">Within 10 miles</p>
+					<ul class="space-y-2 text-gray-700">
+						<li class="flex items-center">
+							<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+							<span>Burton upon Trent</span>
+						</li>
+						<li class="flex items-center">
+							<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+							<span>Barton under Needwood</span>
+						</li>
+						<li class="flex items-center">
+							<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+							<span>Tatenhill</span>
+						</li>
+						<li class="flex items-center">
+							<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+							<span>Repton</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="bg-emerald-50 rounded-xl p-8">
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Derby Area</h3>
+					<p class="text-gray-700 mb-4">Within 5 miles</p>
+					<ul class="space-y-2 text-gray-700">
+						<li class="flex items-center">
+							<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+							<span>Derby</span>
+						</li>
+						<li class="flex items-center">
+							<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+							<span>Mickleover</span>
+						</li>
+						<li class="flex items-center">
+							<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+							<span>Mackworth</span>
+						</li>
+						<li class="flex items-center">
+							<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+							<span>Melbourne</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Form -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<ContactForm 
+				title="Request a Quote"
+				subtitle="Tell us about your cleaning needs and we'll get back to you with a personalized quote."
+			/>
+		</div>
+	</section>
+</Layout>

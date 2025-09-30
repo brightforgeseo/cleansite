@@ -1,0 +1,202 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<Layout title="Contact Us - Clean Collective Ltd" description="Get in touch with Clean Collective Ltd for a free quote or to discuss your cleaning needs.">
+	<!-- Hero Section -->
+	<section class="bg-emerald-600 text-white py-16 md:py-20">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto text-center">
+				<h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+				<p class="text-xl text-emerald-50">We'd love to hear from you. Get in touch to discuss your cleaning needs.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Information -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-6xl mx-auto">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+					<!-- Email -->
+					<div class="text-center bg-emerald-50 rounded-xl p-8">
+						<div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+							<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Email Us</h3>
+						<a href="mailto:admin@cleancollective.co.uk" class="text-emerald-600 hover:text-emerald-700 font-medium">
+							admin@cleancollective.co.uk
+						</a>
+						<p class="text-gray-600 mt-3 text-sm">We typically respond within 24 hours</p>
+					</div>
+
+					<!-- Service Areas -->
+					<div class="text-center bg-emerald-50 rounded-xl p-8">
+						<div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+							<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Service Areas</h3>
+						<p class="text-gray-700">Burton upon Trent (10 miles)</p>
+						<p class="text-gray-700">Derby (5 miles)</p>
+						<p class="text-gray-600 mt-3 text-sm">Including surrounding villages</p>
+					</div>
+
+					<!-- Hours -->
+					<div class="text-center bg-emerald-50 rounded-xl p-8">
+						<div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+							<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Flexible Scheduling</h3>
+						<p class="text-gray-700">Mon - Fri: 8am - 6pm</p>
+						<p class="text-gray-700">Weekends: By arrangement</p>
+						<p class="text-gray-600 mt-3 text-sm">We work around your schedule</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Form -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<ContactForm />
+		</div>
+	</section>
+
+	<!-- Service Areas Detail -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-6xl mx-auto">
+				<h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Where We Serve</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl p-8 shadow-lg">
+						<h3 class="text-2xl font-bold text-gray-900 mb-2">Burton upon Trent Area</h3>
+						<p class="text-emerald-600 font-semibold mb-6">Within 10 miles</p>
+						<div class="grid grid-cols-2 gap-4">
+							<div>
+								<ul class="space-y-2 text-gray-700">
+									<li class="flex items-center">
+										<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+										<span>Burton upon Trent</span>
+									</li>
+									<li class="flex items-center">
+										<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+										<span>Barton under Needwood</span>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<ul class="space-y-2 text-gray-700">
+									<li class="flex items-center">
+										<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+										<span>Tatenhill</span>
+									</li>
+									<li class="flex items-center">
+										<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+										<span>Repton</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl p-8 shadow-lg">
+						<h3 class="text-2xl font-bold text-gray-900 mb-2">Derby Area</h3>
+						<p class="text-emerald-600 font-semibold mb-6">Within 5 miles</p>
+						<div class="grid grid-cols-2 gap-4">
+							<div>
+								<ul class="space-y-2 text-gray-700">
+									<li class="flex items-center">
+										<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+										<span>Derby</span>
+									</li>
+									<li class="flex items-center">
+										<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+										<span>Mickleover</span>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<ul class="space-y-2 text-gray-700">
+									<li class="flex items-center">
+										<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+										<span>Mackworth</span>
+									</li>
+									<li class="flex items-center">
+										<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+										<span>Melbourne</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mt-12 bg-emerald-600 text-white rounded-xl p-8 text-center">
+					<h3 class="text-2xl font-bold mb-4">Not Sure If We Cover Your Area?</h3>
+					<p class="text-emerald-50 mb-6">Get in touch and we'll let you know if we can help. We're always looking to expand our service area!</p>
+					<a href="mailto:admin@cleancollective.co.uk" class="inline-block bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-all">
+						Email Us Now
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ Section -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+				<div class="space-y-6">
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">How do I get a quote?</h3>
+						<p class="text-gray-700">
+							Simply fill out our contact form above or email us directly at admin@cleancollective.co.uk. 
+							We'll get back to you within 24 hours with a personalized quote based on your needs.
+						</p>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Do you provide cleaning supplies?</h3>
+						<p class="text-gray-700">
+							Yes! We bring all necessary cleaning supplies and equipment. If you have specific products you'd 
+							like us to use, we're happy to accommodate that too.
+						</p>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Are you insured?</h3>
+						<p class="text-gray-700">
+							Yes, we are fully insured for your peace of mind. Your home and belongings are protected while we work.
+						</p>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Can I book a one-off clean?</h3>
+						<p class="text-gray-700">
+							Absolutely! We offer both one-off cleans and regular cleaning services. Whether you need a deep clean 
+							before a special occasion or ongoing support, we're here to help.
+						</p>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">What if I need to reschedule?</h3>
+						<p class="text-gray-700">
+							Life happens! We understand things come up. Just give us as much notice as possible and we'll do our 
+							best to accommodate your new schedule.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>

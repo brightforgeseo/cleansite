@@ -1,0 +1,100 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Professional domestic cleaning services in Burton upon Trent and Derby areas" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+	</head>
+	<body class="bg-gray-50 text-gray-900">
+		<nav class="bg-white shadow-md sticky top-0 z-50">
+			<div class="container mx-auto px-4 py-4">
+				<div class="flex items-center justify-between">
+					<a href="/" class="flex items-center space-x-2">
+						<span class="text-2xl font-bold text-emerald-600">Clean Collective</span>
+						<span class="text-sm text-gray-600">Ltd</span>
+					</a>
+					
+					<div class="hidden md:flex items-center space-x-8">
+						<a href="/" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">Home</a>
+						<a href="/services" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">Services</a>
+						<a href="/about" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">About</a>
+						<a href="/contact" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">Contact</a>
+						<a href="mailto:admin@cleancollective.co.uk" class="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors">
+							Email Us
+						</a>
+					</div>
+
+					<!-- Mobile menu button -->
+					<button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-emerald-600 focus:outline-none">
+						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+				</div>
+
+				<!-- Mobile menu -->
+				<div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+					<a href="/" class="block text-gray-700 hover:text-emerald-600 transition-colors font-medium">Home</a>
+					<a href="/services" class="block text-gray-700 hover:text-emerald-600 transition-colors font-medium">Services</a>
+					<a href="/about" class="block text-gray-700 hover:text-emerald-600 transition-colors font-medium">About</a>
+					<a href="/contact" class="block text-gray-700 hover:text-emerald-600 transition-colors font-medium">Contact</a>
+					<a href="mailto:admin@cleancollective.co.uk" class="inline-block bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors">
+						Email Us
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<slot />
+
+		<footer class="bg-gray-900 text-white mt-20">
+			<div class="container mx-auto px-4 py-12">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div>
+						<h3 class="text-xl font-bold text-emerald-400 mb-4">Clean Collective Ltd</h3>
+						<p class="text-gray-400">Professional domestic cleaning services created by parents, for parents.</p>
+					</div>
+					
+					<div>
+						<h3 class="text-xl font-bold text-emerald-400 mb-4">Contact</h3>
+						<p class="text-gray-400">Email: <a href="mailto:admin@cleancollective.co.uk" class="text-emerald-400 hover:text-emerald-300">admin@cleancollective.co.uk</a></p>
+					</div>
+					
+					<div>
+						<h3 class="text-xl font-bold text-emerald-400 mb-4">Service Areas</h3>
+						<ul class="text-gray-400 space-y-1">
+							<li>Burton upon Trent (within 10 miles)</li>
+							<li>Derby (within 5 miles)</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+					<p>&copy; {new Date().getFullYear()} Clean Collective Ltd. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			const mobileMenuButton = document.getElementById('mobile-menu-button');
+			const mobileMenu = document.getElementById('mobile-menu');
+
+			mobileMenuButton?.addEventListener('click', () => {
+				mobileMenu?.classList.toggle('hidden');
+			});
+		</script>
+	</body>
+</html>
