@@ -1,0 +1,121 @@
+---
+const faqs = [
+  {
+    question: "How do I get a quote?",
+    answer: "Simply fill out our contact form on any page or email us directly at admin@cleancollective.co.uk. We'll get back to you within 24 hours with a personalized quote based on your needs."
+  },
+  {
+    question: "Do you provide cleaning supplies?",
+    answer: "Yes! We bring all necessary cleaning supplies and equipment. If you have specific products you'd like us to use, we're happy to accommodate that too."
+  },
+  {
+    question: "Are you insured?",
+    answer: "Yes, we are fully insured for your peace of mind. Your home and belongings are protected while we work."
+  },
+  {
+    question: "Can I book a one-off clean?",
+    answer: "Absolutely! We offer both one-off cleans and regular cleaning services. Whether you need a deep clean before a special occasion or ongoing support, we're here to help."
+  },
+  {
+    question: "What if I need to reschedule?",
+    answer: "Life happens! We understand things come up. Just give us as much notice as possible and we'll do our best to accommodate your new schedule."
+  },
+  {
+    question: "What areas do you cover?",
+    answer: "We serve Burton upon Trent (within 10 miles) and Derby (within 5 miles), including Barton under Needwood, Tatenhill, Repton, Mickleover, Mackworth, and Melbourne."
+  },
+  {
+    question: "How long does a cleaning session take?",
+    answer: "This depends on the size of your home and the type of clean. A standard clean typically takes 2-4 hours, while a deep clean can take 4-6 hours or more for larger properties."
+  },
+  {
+    question: "Do I need to be home during the clean?",
+    answer: "No, you don't need to be home. Many of our clients provide us with a key or access code. We're fully trustworthy and vetted, so you can feel confident leaving your home in our care."
+  }
+];
+---
+
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+        <p class="text-xl text-gray-600">Got questions? We've got answers!</p>
+      </div>
+
+      <div class="space-y-4">
+        {faqs.map((faq, index) => (
+          <div class="bg-gray-50 rounded-xl overflow-hidden">
+            <button 
+              class="faq-question w-full text-left px-6 py-5 flex items-center justify-between hover:bg-gray-100 transition-colors"
+              data-index={index}
+            >
+              <span class="text-lg font-bold text-gray-900 pr-8">{faq.question}</span>
+              <svg 
+                class="faq-icon w-6 h-6 text-emerald-600 flex-shrink-0 transition-transform duration-300"
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-6 pb-5">
+              <p class="text-gray-700 leading-relaxed">{faq.answer}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-12 bg-emerald-50 rounded-xl p-8 text-center">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Still have questions?</h3>
+        <p class="text-gray-700 mb-6">We're here to help! Get in touch and we'll answer any questions you have.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-all">
+            Contact Us
+          </a>
+          <a href="mailto:admin@cleancollective.co.uk" class="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-all border-2 border-emerald-600">
+            Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const questions = document.querySelectorAll('.faq-question');
+    
+    questions.forEach((question) => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('.faq-icon');
+        const isOpen = !answer?.classList.contains('hidden');
+        
+        // Close all other answers
+        document.querySelectorAll('.faq-answer').forEach((a) => {
+          if (a !== answer) {
+            a.classList.add('hidden');
+          }
+        });
+        
+        // Reset all other icons
+        document.querySelectorAll('.faq-icon').forEach((i) => {
+          if (i !== icon) {
+            i.style.transform = 'rotate(0deg)';
+          }
+        });
+        
+        // Toggle current answer
+        if (isOpen) {
+          answer?.classList.add('hidden');
+          if (icon) icon.style.transform = 'rotate(0deg)';
+        } else {
+          answer?.classList.remove('hidden');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  });
+</script>
