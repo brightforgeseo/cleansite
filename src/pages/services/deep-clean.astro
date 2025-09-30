@@ -1,0 +1,271 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContactForm from '../../components/ContactForm.astro';
+---
+
+<Layout title="Deep Cleaning Services - Clean Collective Ltd" description="Professional deep cleaning services for a thorough, top-to-bottom clean in Burton upon Trent and Derby.">
+	<!-- Hero Section -->
+	<section class="bg-gradient-to-br from-emerald-700 to-emerald-900 text-white py-16 md:py-24">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto text-center">
+				<h1 class="text-4xl md:text-5xl font-bold mb-4">Deep Cleaning Services</h1>
+				<p class="text-xl text-emerald-50 mb-6">Comprehensive, thorough cleaning for a spotless home from top to bottom</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="#contact" class="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-all">
+						Get a Quote
+					</a>
+					<a href="/services" class="bg-emerald-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-900 transition-all border-2 border-white">
+						All Services
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- What's Included -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-6xl mx-auto">
+				<div class="text-center mb-12">
+					<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Everything in Standard Clean, Plus:</h2>
+					<p class="text-xl text-gray-600">Our deep clean goes beyond regular cleaning to tackle those hard-to-reach areas</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl shadow-lg p-6 border-2 border-emerald-100">
+						<div class="flex items-start">
+							<svg class="w-6 h-6 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-lg font-bold text-gray-900 mb-2">Internal Doors & Frames</h3>
+								<p class="text-gray-600">Thorough cleaning of door surfaces and frames throughout your home</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl shadow-lg p-6 border-2 border-emerald-100">
+						<div class="flex items-start">
+							<svg class="w-6 h-6 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-lg font-bold text-gray-900 mb-2">Skirting Boards</h3>
+								<p class="text-gray-600">Complete wipe down of all skirting boards to remove dust and grime</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl shadow-lg p-6 border-2 border-emerald-100">
+						<div class="flex items-start">
+							<svg class="w-6 h-6 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-lg font-bold text-gray-900 mb-2">Inside Fridge & Freezer</h3>
+								<p class="text-gray-600">Deep clean and sanitize the inside of your refrigerator and freezer</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl shadow-lg p-6 border-2 border-emerald-100">
+						<div class="flex items-start">
+							<svg class="w-6 h-6 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-lg font-bold text-gray-900 mb-2">Inside Dishwasher</h3>
+								<p class="text-gray-600">Thorough cleaning to remove buildup and keep it running efficiently</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl shadow-lg p-6 border-2 border-emerald-100">
+						<div class="flex items-start">
+							<svg class="w-6 h-6 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-lg font-bold text-gray-900 mb-2">Sofa & Beds</h3>
+								<p class="text-gray-600">Vacuumed and freshened to remove dust, allergens, and odors</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl shadow-lg p-6 border-2 border-emerald-100">
+						<div class="flex items-start">
+							<svg class="w-6 h-6 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-lg font-bold text-gray-900 mb-2">Behind Furniture</h3>
+								<p class="text-gray-600">Furniture moved and areas behind cleaned that are usually missed</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl shadow-lg p-6 border-2 border-emerald-100 md:col-span-2 lg:col-span-1">
+						<div class="flex items-start">
+							<svg class="w-6 h-6 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-lg font-bold text-gray-900 mb-2">Kitchen Cupboards</h3>
+								<p class="text-gray-600">Inside of cupboards wiped clean and organized</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mt-12 bg-emerald-600 text-white rounded-xl p-8 text-center">
+					<h3 class="text-2xl font-bold mb-3">Complete Package</h3>
+					<p class="text-lg text-emerald-50">All standard cleaning services are included with every deep clean</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- When to Book -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">When Should You Book a Deep Clean?</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+							<svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Moving In/Out</h3>
+						<p class="text-gray-700">Perfect for ensuring your new home is spotless or leaving your old property in pristine condition.</p>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+							<svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Seasonal Refresh</h3>
+						<p class="text-gray-700">Spring or autumn deep clean to refresh your home and tackle accumulated dirt and dust.</p>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+							<svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Special Occasions</h3>
+						<p class="text-gray-700">Before hosting guests or celebrations, ensure your home looks and feels its absolute best.</p>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+							<svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Regular Maintenance</h3>
+						<p class="text-gray-700">Every 3-6 months to maintain your home's cleanliness and prevent buildup.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Benefits of Deep Cleaning</h2>
+				<div class="space-y-6">
+					<div class="flex items-start bg-emerald-50 rounded-xl p-6">
+						<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+						</svg>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Healthier Environment</h3>
+							<p class="text-gray-700">Remove allergens, dust mites, and bacteria from hard-to-reach areas for better air quality.</p>
+						</div>
+					</div>
+
+					<div class="flex items-start bg-emerald-50 rounded-xl p-6">
+						<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+						</svg>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Extends Appliance Life</h3>
+							<p class="text-gray-700">Proper cleaning of appliances helps them run more efficiently and last longer.</p>
+						</div>
+					</div>
+
+					<div class="flex items-start bg-emerald-50 rounded-xl p-6">
+						<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+						</svg>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Fresh Start</h3>
+							<p class="text-gray-700">A thoroughly clean home provides a fresh, revitalized feeling and reduces stress.</p>
+						</div>
+					</div>
+
+					<div class="flex items-start bg-emerald-50 rounded-xl p-6">
+						<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+						</svg>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Easier to Maintain</h3>
+							<p class="text-gray-700">After a deep clean, regular cleaning becomes much easier and more effective.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section class="py-16 bg-emerald-600">
+		<div class="container mx-auto px-4">
+			<div class="max-w-3xl mx-auto text-center text-white">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready for a Spotless Home?</h2>
+				<p class="text-xl mb-8 text-emerald-50">Book your deep clean today and experience the difference</p>
+				<a href="#contact" class="inline-block bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold hover:bg-emerald-50 transition-all text-lg">
+					Get Your Quote Now
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Other Services -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="max-w-6xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Our Other Services</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<a href="/services/standard-clean" class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all group">
+						<h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">Standard Cleans</h3>
+						<p class="text-gray-700 mb-4">Regular cleaning services for bathrooms, kitchens, and living areas to keep your home fresh.</p>
+						<span class="text-emerald-600 font-semibold">Learn more →</span>
+					</a>
+					<a href="/services/steam-clean" class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all group">
+						<h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">Bathroom Steam Cleans</h3>
+						<p class="text-gray-700 mb-4">Specialized steam cleaning for thorough grout, limescale, and mould removal.</p>
+						<span class="text-emerald-600 font-semibold">Learn more →</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Form -->
+	<section id="contact" class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<ContactForm 
+				title="Book Your Deep Clean"
+				subtitle="Get a personalized quote for a comprehensive deep clean of your home."
+			/>
+		</div>
+	</section>
+</Layout>

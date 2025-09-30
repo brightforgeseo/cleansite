@@ -1,0 +1,249 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContactForm from '../../components/ContactForm.astro';
+---
+
+<Layout title="Standard Cleaning Services - Clean Collective Ltd" description="Regular professional cleaning services for bathrooms, kitchens, and living areas in Burton upon Trent and Derby.">
+	<!-- Hero Section -->
+	<section class="bg-gradient-to-br from-emerald-600 to-emerald-800 text-white py-16 md:py-24">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto text-center">
+				<h1 class="text-4xl md:text-5xl font-bold mb-4">Standard Cleaning Services</h1>
+				<p class="text-xl text-emerald-50 mb-6">Regular cleaning services to maintain a fresh and tidy home</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="#contact" class="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-all">
+						Get a Quote
+					</a>
+					<a href="/services" class="bg-emerald-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-900 transition-all border-2 border-white">
+						All Services
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-6xl mx-auto">
+				<div class="text-center mb-12">
+					<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What's Included</h2>
+					<p class="text-xl text-gray-600">Comprehensive cleaning for your entire home</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- Bathrooms -->
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl p-8 shadow-lg border-2 border-emerald-100">
+						<div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-6">
+							<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-6">Bathrooms</h3>
+						<ul class="space-y-3">
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Limescale removal</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Clean sink, basin, shower & bath</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Mirrors cleaned</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Towel rails polished</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Floors cleaned & mopped</span>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Kitchen -->
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl p-8 shadow-lg border-2 border-emerald-100">
+						<div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-6">
+							<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-6">Kitchen</h3>
+						<ul class="space-y-3">
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Sanitise all work surfaces</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">External cupboard doors & handles</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Sink cleaned & polished</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Hob & splashback</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Floor swept & mopped</span>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Living Areas -->
+					<div class="bg-gradient-to-br from-emerald-50 to-white rounded-xl p-8 shadow-lg border-2 border-emerald-100">
+						<div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-6">
+							<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-6">Living Areas</h3>
+						<ul class="space-y-3">
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Dust & polish all surfaces</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Mirrors cleaned</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Vacuum & mop hard floors</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Door handles & light switches</span>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<span class="text-gray-700">Skirting boards dusted</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Choose Standard Clean -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Why Choose Regular Cleaning?</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Maintains Cleanliness</h3>
+						<p class="text-gray-700">Regular cleaning prevents dirt and grime buildup, keeping your home consistently fresh and healthy.</p>
+					</div>
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Saves Time</h3>
+						<p class="text-gray-700">Free up your valuable time to spend with family while we handle the cleaning.</p>
+					</div>
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Flexible Scheduling</h3>
+						<p class="text-gray-700">Choose weekly, fortnightly, or monthly visits that suit your lifestyle and budget.</p>
+					</div>
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Cost-Effective</h3>
+						<p class="text-gray-700">Regular maintenance is more affordable than periodic deep cleaning and keeps your home in top condition.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Pricing Info -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-3xl mx-auto text-center">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Flexible Cleaning Plans</h2>
+				<p class="text-xl text-gray-600 mb-8">We offer customizable cleaning schedules to fit your needs and budget</p>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+					<div class="bg-emerald-50 rounded-xl p-6">
+						<h3 class="text-2xl font-bold text-gray-900 mb-2">Weekly</h3>
+						<p class="text-gray-700">Perfect for busy families</p>
+					</div>
+					<div class="bg-emerald-50 rounded-xl p-6 border-2 border-emerald-600">
+						<h3 class="text-2xl font-bold text-gray-900 mb-2">Fortnightly</h3>
+						<p class="text-gray-700">Most popular option</p>
+					</div>
+					<div class="bg-emerald-50 rounded-xl p-6">
+						<h3 class="text-2xl font-bold text-gray-900 mb-2">Monthly</h3>
+						<p class="text-gray-700">Regular maintenance</p>
+					</div>
+				</div>
+				<a href="#contact" class="inline-block bg-emerald-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-emerald-700 transition-all text-lg">
+					Get Your Custom Quote
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Other Services -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="max-w-6xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Our Other Services</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<a href="/services/deep-clean" class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all group">
+						<h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">Deep Cleans</h3>
+						<p class="text-gray-700 mb-4">Comprehensive top-to-bottom cleaning including inside appliances, behind furniture, and more.</p>
+						<span class="text-emerald-600 font-semibold">Learn more →</span>
+					</a>
+					<a href="/services/steam-clean" class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all group">
+						<h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">Bathroom Steam Cleans</h3>
+						<p class="text-gray-700 mb-4">Specialized steam cleaning for thorough grout, limescale, and mould removal.</p>
+						<span class="text-emerald-600 font-semibold">Learn more →</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Form -->
+	<section id="contact" class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<ContactForm 
+				title="Book Your Standard Clean"
+				subtitle="Fill out the form below and we'll provide a personalized quote for your home."
+			/>
+		</div>
+	</section>
+</Layout>

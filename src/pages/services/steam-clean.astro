@@ -1,0 +1,311 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContactForm from '../../components/ContactForm.astro';
+---
+
+<Layout title="Bathroom Steam Cleaning Services - Clean Collective Ltd" description="Professional bathroom steam cleaning services for deep grout, limescale, and mould removal in Burton upon Trent and Derby.">
+	<!-- Hero Section -->
+	<section class="bg-gradient-to-br from-blue-600 to-emerald-700 text-white py-16 md:py-24">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto text-center">
+				<h1 class="text-4xl md:text-5xl font-bold mb-4">Bathroom Steam Cleaning</h1>
+				<p class="text-xl text-blue-50 mb-6">Professional steam cleaning for thorough grout, limescale, and mould removal</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="#contact" class="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all">
+						Get a Quote
+					</a>
+					<a href="/services" class="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-all border-2 border-white">
+						All Services
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- What We Clean -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<div class="text-center mb-12">
+					<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What's Included</h2>
+					<p class="text-xl text-gray-600">Specialized steam cleaning for bathroom surfaces</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="text-center">
+						<div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+							<svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Thorough Grout Clean</h3>
+						<p class="text-gray-700">Deep cleaning of tile grout to remove embedded dirt, grime, and discoloration. Our steam cleaning penetrates deep into the porous grout surface to restore its original appearance.</p>
+					</div>
+
+					<div class="text-center">
+						<div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+							<svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Thorough Limescale Removal</h3>
+						<p class="text-gray-700">Complete removal of stubborn limescale buildup from taps, tiles, shower screens, and other bathroom fixtures. Steam cleaning effectively breaks down mineral deposits.</p>
+					</div>
+
+					<div class="text-center">
+						<div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+							<svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Thorough Mould Clean</h3>
+						<p class="text-gray-700">Professional treatment and removal of mould from bathroom surfaces, sealant, and grout. High-temperature steam kills mould spores and prevents regrowth.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Steam Cleaning -->
+	<section class="py-20 bg-gradient-to-br from-emerald-50 to-blue-50">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Why Choose Steam Cleaning?</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<div class="flex items-start">
+							<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-xl font-bold text-gray-900 mb-2">Chemical-Free Cleaning</h3>
+								<p class="text-gray-700">Uses only water vapor, making it safe for your family, pets, and the environment. No harsh chemical residue or fumes.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<div class="flex items-start">
+							<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-xl font-bold text-gray-900 mb-2">Deep Sanitization</h3>
+								<p class="text-gray-700">High-temperature steam (up to 130°C) kills 99.9% of bacteria, viruses, and allergens for a truly hygienic clean.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<div class="flex items-start">
+							<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-xl font-bold text-gray-900 mb-2">Tackles Tough Stains</h3>
+								<p class="text-gray-700">Removes stubborn marks, soap scum, and buildup that regular cleaning methods can't handle effectively.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<div class="flex items-start">
+							<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-xl font-bold text-gray-900 mb-2">Long-Lasting Results</h3>
+								<p class="text-gray-700">Steam cleaning penetrates deeper and keeps surfaces cleaner for longer compared to traditional methods.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<div class="flex items-start">
+							<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-xl font-bold text-gray-900 mb-2">Reaches Difficult Areas</h3>
+								<p class="text-gray-700">Steam penetrates into cracks, crevices, and textured surfaces that are hard to clean manually.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<div class="flex items-start">
+							<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+							<div>
+								<h3 class="text-xl font-bold text-gray-900 mb-2">Prevents Mould Return</h3>
+								<p class="text-gray-700">Kills mould spores at the source and helps prevent regrowth when combined with proper ventilation.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Areas We Steam Clean -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Bathroom Areas We Steam Clean</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<div class="bg-emerald-50 rounded-xl p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-4">Tiles & Grout</h3>
+						<ul class="space-y-2 text-gray-700">
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Floor tiles and grout lines</span>
+							</li>
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Wall tiles and grout</span>
+							</li>
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Shower tiles and enclosures</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bg-emerald-50 rounded-xl p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-4">Fixtures & Fittings</h3>
+						<ul class="space-y-2 text-gray-700">
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Taps and shower heads</span>
+							</li>
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Shower screens and doors</span>
+							</li>
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Chrome and metal fixtures</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bg-emerald-50 rounded-xl p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-4">Sealant & Silicone</h3>
+						<ul class="space-y-2 text-gray-700">
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Bath and sink sealant</span>
+							</li>
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Shower tray sealant</span>
+							</li>
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Mould-prone areas</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bg-emerald-50 rounded-xl p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-4">Surfaces</h3>
+						<ul class="space-y-2 text-gray-700">
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Toilets and bidets</span>
+							</li>
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Baths and basins</span>
+							</li>
+							<li class="flex items-center">
+								<span class="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+								<span>Hard-to-reach corners</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- When to Book -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">When Should You Book Steam Cleaning?</h2>
+				<div class="space-y-6">
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">✓ Stubborn Limescale Buildup</h3>
+						<p class="text-gray-700">When you have hard water stains and limescale that won't come off with regular cleaning.</p>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">✓ Visible Mould or Mildew</h3>
+						<p class="text-gray-700">If you notice black mould on grout, sealant, or bathroom surfaces.</p>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">✓ Discolored Grout</h3>
+						<p class="text-gray-700">When your grout has become dark, dingy, or stained over time.</p>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">✓ Deep Bathroom Refresh</h3>
+						<p class="text-gray-700">As part of a seasonal deep clean or before selling/renting your property.</p>
+					</div>
+
+					<div class="bg-white rounded-xl p-6 shadow-md">
+						<h3 class="text-xl font-bold text-gray-900 mb-3">✓ Every 3-6 Months</h3>
+						<p class="text-gray-700">Regular steam cleaning maintains bathroom hygiene and prevents buildup.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section class="py-16 bg-gradient-to-br from-emerald-600 to-blue-600 text-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-3xl mx-auto text-center">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">Transform Your Bathroom</h2>
+				<p class="text-xl mb-8 text-emerald-50">Experience the power of professional steam cleaning</p>
+				<a href="#contact" class="inline-block bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all text-lg">
+					Book Your Steam Clean
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Other Services -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-6xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Our Other Services</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<a href="/services/standard-clean" class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all group">
+						<h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">Standard Cleans</h3>
+						<p class="text-gray-700 mb-4">Regular cleaning services for bathrooms, kitchens, and living areas to keep your home fresh.</p>
+						<span class="text-emerald-600 font-semibold">Learn more →</span>
+					</a>
+					<a href="/services/deep-clean" class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all group">
+						<h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">Deep Cleans</h3>
+						<p class="text-gray-700 mb-4">Comprehensive top-to-bottom cleaning including inside appliances and behind furniture.</p>
+						<span class="text-emerald-600 font-semibold">Learn more →</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Form -->
+	<section id="contact" class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<ContactForm 
+				title="Book Your Bathroom Steam Clean"
+				subtitle="Get a quote for professional steam cleaning to restore your bathroom's sparkle."
+			/>
+		</div>
+	</section>
+</Layout>
