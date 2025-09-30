@@ -1,0 +1,211 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContactForm from '../../components/ContactForm.astro';
+---
+
+<Layout title="Cleaning Services in Burton upon Trent - Clean Collective Ltd" description="Professional domestic cleaning services in Burton upon Trent. Standard cleans, deep cleans, and bathroom steam cleaning. Family-run, flexible scheduling.">
+	<!-- Hero Section -->
+	<section class="bg-gradient-to-br from-emerald-600 to-emerald-800 text-white py-16 md:py-20">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto text-center">
+				<h1 class="text-4xl md:text-5xl font-bold mb-4">Cleaning Services in Burton upon Trent</h1>
+				<p class="text-xl text-emerald-50 mb-6">Professional domestic cleaning within 10 miles of Burton upon Trent</p>
+				<a href="#contact" class="inline-block bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-all">
+					Get a Free Quote
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Area Info -->
+	<section class="py-12 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto text-center">
+				<p class="text-lg text-gray-700">
+					Proudly serving Burton upon Trent and surrounding areas including Barton under Needwood, Tatenhill, and Repton. 
+					As a family-run business created by parents for parents, we understand the importance of a clean home and flexible service.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Offered -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="max-w-6xl mx-auto">
+				<h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Our Cleaning Services in Burton upon Trent</h2>
+				
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- Standard Clean -->
+					<div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+						<div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+							<svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+							</svg>
+						</div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Standard Clean</h3>
+						<p class="text-gray-600 mb-4">Regular cleaning to keep your Burton home fresh and tidy.</p>
+						<ul class="space-y-2 text-gray-700 mb-6">
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Bathrooms cleaned & sanitized</span>
+							</li>
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Kitchen deep cleaned</span>
+							</li>
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Living areas dusted & vacuumed</span>
+							</li>
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Floors mopped</span>
+							</li>
+						</ul>
+						<a href="/services/standard-clean" class="text-emerald-600 font-semibold hover:text-emerald-700">
+							Learn more →
+						</a>
+					</div>
+
+					<!-- Deep Clean -->
+					<div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-2 border-emerald-200">
+						<div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-6">
+							<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Deep Clean</h3>
+						<p class="text-gray-600 mb-4">Comprehensive top-to-bottom cleaning for Burton upon Trent homes.</p>
+						<ul class="space-y-2 text-gray-700 mb-6">
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Inside appliances (fridge, oven)</span>
+							</li>
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Behind furniture</span>
+							</li>
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Inside cupboards</span>
+							</li>
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Detailed skirting & doors</span>
+							</li>
+						</ul>
+						<a href="/services/deep-clean" class="text-emerald-600 font-semibold hover:text-emerald-700">
+							Learn more →
+						</a>
+					</div>
+
+					<!-- Steam Clean -->
+					<div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+						<div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+							<svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+							</svg>
+						</div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Bathroom Steam Clean</h3>
+						<p class="text-gray-600 mb-4">Professional steam cleaning for bathrooms in Burton upon Trent.</p>
+						<ul class="space-y-2 text-gray-700 mb-6">
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Grout deep cleaned</span>
+							</li>
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Limescale removal</span>
+							</li>
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Mould treatment</span>
+							</li>
+							<li class="flex items-start">
+								<span class="text-emerald-600 mr-2">✓</span>
+								<span>Chemical-free cleaning</span>
+							</li>
+						</ul>
+						<a href="/services/steam-clean" class="text-emerald-600 font-semibold hover:text-emerald-700">
+							Learn more →
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Choose Us -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Why Burton upon Trent Families Choose Us</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<div class="flex items-start">
+						<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+						</svg>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Local & Reliable</h3>
+							<p class="text-gray-700">Serving Burton upon Trent and surrounding areas with trusted, professional service.</p>
+						</div>
+					</div>
+					<div class="flex items-start">
+						<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+						</svg>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Family-Focused</h3>
+							<p class="text-gray-700">Created by parents for parents - we understand busy family life in Burton.</p>
+						</div>
+					</div>
+					<div class="flex items-start">
+						<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+						</svg>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Flexible Scheduling</h3>
+							<p class="text-gray-700">We work around your schedule with weekly, fortnightly, or monthly visits.</p>
+						</div>
+					</div>
+					<div class="flex items-start">
+						<svg class="w-8 h-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+						</svg>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Fully Insured</h3>
+							<p class="text-gray-700">Your Burton home is protected with our comprehensive insurance coverage.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Areas Covered -->
+	<section class="py-16 bg-emerald-50">
+		<div class="container mx-auto px-4">
+			<div class="max-w-3xl mx-auto text-center">
+				<h2 class="text-3xl font-bold text-gray-900 mb-6">Areas We Cover Near Burton upon Trent</h2>
+				<p class="text-lg text-gray-700 mb-8">We serve Burton upon Trent and all areas within a 10-mile radius:</p>
+				<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-700">
+					<div class="bg-white rounded-lg p-4 shadow">Burton upon Trent</div>
+					<div class="bg-white rounded-lg p-4 shadow">Barton under Needwood</div>
+					<div class="bg-white rounded-lg p-4 shadow">Tatenhill</div>
+					<div class="bg-white rounded-lg p-4 shadow">Repton</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Form -->
+	<section id="contact" class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<ContactForm 
+				title="Get a Quote for Burton upon Trent"
+				subtitle="Fill out the form below and we'll provide a free, no-obligation quote for your home in Burton upon Trent."
+			/>
+		</div>
+	</section>
+</Layout>
