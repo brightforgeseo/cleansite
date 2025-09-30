@@ -1,0 +1,66 @@
+---
+const testimonials = [
+  {
+    name: "Sarah M.",
+    location: "Burton upon Trent",
+    rating: 5,
+    text: "Clean Collective have been a lifesaver! As a busy mum of two, their flexible scheduling and understanding approach is exactly what I needed. The team is thorough and trustworthy.",
+  },
+  {
+    name: "James T.",
+    location: "Derby",
+    rating: 5,
+    text: "Outstanding service! They did a deep clean before we moved in and the house was spotless. Professional, friendly, and reasonably priced. Highly recommend!",
+  },
+  {
+    name: "Emma L.",
+    location: "Mickleover",
+    rating: 5,
+    text: "I love that they understand family life. They're flexible when I need to reschedule and always do a fantastic job. The bathroom steam clean was incredible!",
+  },
+];
+---
+
+<section class="py-20 bg-gradient-to-br from-emerald-50 to-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+        <p class="text-xl text-gray-600">Trusted by families across Burton upon Trent and Derby</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {testimonials.map((testimonial) => (
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <!-- Star Rating -->
+            <div class="flex mb-4">
+              {[...Array(testimonial.rating)].map(() => (
+                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              ))}
+            </div>
+
+            <!-- Testimonial Text -->
+            <p class="text-gray-700 mb-6 leading-relaxed italic">"{testimonial.text}"</p>
+
+            <!-- Client Info -->
+            <div class="border-t border-gray-200 pt-4">
+              <p class="font-bold text-gray-900">{testimonial.name}</p>
+              <p class="text-sm text-gray-600">{testimonial.location}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-12">
+        <a 
+          href="/contact" 
+          class="inline-block bg-emerald-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-emerald-700 transition-all transform hover:scale-105"
+        >
+          Join Our Happy Clients
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

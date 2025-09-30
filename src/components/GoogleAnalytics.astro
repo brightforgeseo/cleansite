@@ -1,0 +1,21 @@
+---
+// To enable Google Analytics:
+// 1. Get your GA4 Measurement ID from https://analytics.google.com/
+// 2. Add GOOGLE_ANALYTICS_ID to your .env file
+// 3. Add it to Netlify environment variables
+
+const gaId = import.meta.env.GOOGLE_ANALYTICS_ID;
+---
+
+{gaId && (
+  <>
+    <!-- Google tag (gtag.js) -->
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+    <script define:vars={{ gaId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gaId);
+    </script>
+  </>
+)}

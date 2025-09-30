@@ -1,12 +1,17 @@
 ---
 import '../styles/global.css';
+import Schema from '../components/Schema.astro';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 
 interface Props {
 	title: string;
 	description?: string;
+	ogImage?: string;
 }
 
-const { title, description = "Professional domestic cleaning services in Burton upon Trent and Derby areas" } = Astro.props;
+const { title, description = "Professional domestic cleaning services in Burton upon Trent and Derby areas", ogImage } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const defaultOgImage = new URL('/og-image.jpg', Astro.site);
 ---
 
 <!doctype html>
@@ -16,7 +21,29 @@ const { title, description = "Professional domestic cleaning services in Burton 
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="canonical" href={canonicalURL} />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImage || defaultOgImage} />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={canonicalURL} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={ogImage || defaultOgImage} />
+		
 		<title>{title}</title>
+		
+		<!-- Schema.org structured data -->
+		<Schema />
+		
+		<!-- Google Analytics -->
+		<GoogleAnalytics />
 	</head>
 	<body class="bg-gray-50 text-gray-900">
 		<nav class="bg-white shadow-md sticky top-0 z-50">

@@ -1,0 +1,114 @@
+---
+// Schema.org structured data for Clean Collective Ltd
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://tiegancleansite.netlify.app",
+  "name": "Clean Collective Ltd",
+  "description": "Professional domestic cleaning services in Burton upon Trent and Derby. Created by parents, for parents.",
+  "url": "https://tiegancleansite.netlify.app",
+  "telephone": "+44-XXX-XXXX-XXXX",
+  "email": "admin@cleancollective.co.uk",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Burton upon Trent",
+    "addressRegion": "Staffordshire",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.8067,
+    "longitude": -1.6439
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Burton upon Trent",
+      "description": "Within 10 miles"
+    },
+    {
+      "@type": "City",
+      "name": "Derby",
+      "description": "Within 5 miles"
+    },
+    {
+      "@type": "City",
+      "name": "Barton under Needwood"
+    },
+    {
+      "@type": "City",
+      "name": "Tatenhill"
+    },
+    {
+      "@type": "City",
+      "name": "Repton"
+    },
+    {
+      "@type": "City",
+      "name": "Mickleover"
+    },
+    {
+      "@type": "City",
+      "name": "Mackworth"
+    },
+    {
+      "@type": "City",
+      "name": "Melbourne"
+    }
+  ],
+  "priceRange": "££",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Cleaning Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Standard Cleaning",
+          "description": "Regular cleaning services for bathrooms, kitchens, and living areas",
+          "serviceType": "House Cleaning"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Deep Cleaning",
+          "description": "Comprehensive top-to-bottom cleaning including appliances and hard-to-reach areas",
+          "serviceType": "Deep Cleaning"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bathroom Steam Cleaning",
+          "description": "Professional steam cleaning for grout, limescale, and mould removal",
+          "serviceType": "Steam Cleaning"
+        }
+      }
+    ]
+  },
+  "sameAs": [
+    "https://www.facebook.com/cleancollective",
+    "https://www.instagram.com/cleancollective"
+  ]
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
